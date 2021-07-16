@@ -27,6 +27,7 @@
 * opened php configuration file via `code /usr/local/etc/php/7.4/php.ini`
 * checked the file for imagick to be enabled in the extensions section 
     * none found:
+
     ![no extension="imagick.so"](https://github.com/jacquesdebar/misc-imgs/blob/main/phpi0.png?raw=true)
 
 * added `extension="imagick.so"` in the extensions section, uncommented
@@ -47,6 +48,7 @@
 
 * checked that imagick was installed again with `cat /usr/local/etc/php/7.4/php.ini | grep magic`
     * success!
+    
     ![imagemagick installed properly](https://github.com/jacquesdebar/misc-imgs/blob/main/magiccheck.png?raw=true)
 
 
