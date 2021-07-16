@@ -6,7 +6,7 @@
 ![error: no npm install](https://github.com/jacquesdebar/misc-imgs/blob/main/error1.png?raw=true)
 
 * ran `npm install`, got through the options menu fine, but failed partway through the setup because ImageMagick was missing
-![error: no npm install](https://github.com/jacquesdebar/misc-imgs/blob/main/error2.png?raw=true)
+![error: imagemagick missing](https://github.com/jacquesdebar/misc-imgs/blob/main/error2.png?raw=true)
 
 * installed ImageMagick via `brew install pkg-config imagemagick`
 * used pear to install imagick php extension via `pecl install imagick`, hit an error
@@ -20,7 +20,7 @@
     * `cat /usr/local/etc/php/7.4/php.ini | grep magic`
 
 * output from the final command showed that imagemagick / imagick were not properly attached to php:
-![error: no npm install](https://github.com/jacquesdebar/misc-imgs/blob/main/nomagic.png?raw=true)
+![no imagemagick](https://github.com/jacquesdebar/misc-imgs/blob/main/nomagic.png?raw=true)
 
 
 ## Troubleshooting ImageMagick
@@ -47,7 +47,7 @@
 
 * checked that imagick was installed again with `cat /usr/local/etc/php/7.4/php.ini | grep magic`
     * success!
-    ![error: no npm install](https://github.com/jacquesdebar/misc-imgs/blob/main/magiccheck.png?raw=true)
+    ![imagemagick installed properly](https://github.com/jacquesdebar/misc-imgs/blob/main/magiccheck.png?raw=true)
 
 
 ## Second try
